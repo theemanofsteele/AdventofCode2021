@@ -24,5 +24,8 @@ depthsArray = []
 for depth in depths.readlines():
     depthsArray.append(int(depth.strip()))
 
-print(getchangecount(depthsArray))
-print(getchangecount(buildrollinglist(depthsArray)))
+print("*** Part 1 ***")
+print("Count: " + str(getchangecount(depthsArray)))
+
+print("\n*** Part 2 ***")
+print("Count: " + str(getchangecount(buildrollinglist(depthsArray))))
